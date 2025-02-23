@@ -1,0 +1,20 @@
+$primary-color: #ffff46;
+$background-color: #202020;
+
+body {
+    font-family: 'Atkinson Hyperlegible Mono', serif;
+    background-color: $background-color;
+
+    h1 {
+        color: $primary-color;
+        font-family: 'Atkinson Hyperlegible Mono', serif !important;
+    }
+
+    .validator-description {
+        font-family: 'Atkinson Hyperlegible Mono', serif !important;
+    }
+
+    .img-rounded {
+        border-radius: 50%;
+    }
+}
