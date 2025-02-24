@@ -56,7 +56,7 @@ useHead({
           {{ chain.description }}
         </v-card-text>
         <v-card-text>
-          Website: <a :href="chain.description" target="_blank">{{ chain.website }}</a>
+          Website: <a :href="chain.website" target="_blank">{{ chain.website }}</a>
         </v-card-text>
         <v-card-text>
           My validator link: <a :href="chain.validator_link" target="_blank">Malder</a>
