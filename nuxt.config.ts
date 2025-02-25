@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const yearInSeconds = 60 * 60 * 24 * 365; // 31536000
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	app: {
@@ -59,8 +61,23 @@ export default defineNuxtConfig({
 		]
 	},
 	modules: [
-		'@nuxt/image'
+		'@nuxt/image',
+		'nuxt-delay-hydration'
 	],
+	nitro: {
+		compressPublicAssets: true,
+		prerender: {
+			routes: ['/'],
+		},
+		routeRules: {
+			'/{images,icons,_ipx,_nuxt}/**': {
+				headers: {
+					'cache-control': `public, max-age=${yearInSeconds}, s-maxage=${yearInSeconds}`,
+					'etag': true,
+				},
+			},
+		},
+	},
 	vite: {
 		css: {
 			preprocessorOptions: {
