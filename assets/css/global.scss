@@ -17,4 +17,27 @@ body {
     .img-rounded {
         border-radius: 50%;
     }
+
+    header {
+        .toolbar-title {
+            .v-toolbar-title__placeholder {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        a {
+            color: #121212;
+            text-decoration: none;
+        }
+    }
+
+    nav {
+        .mobile-menu-item {
+            a {
+                color: #ffff46;
+                text-decoration: none;
+            }
+        }
+    }
 }
