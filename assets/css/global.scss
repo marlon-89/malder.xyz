@@ -1,4 +1,4 @@
-$primary-color: #ffff46;
+$primary-color: #F2E34C;
 $background-color: #202020;
 
 body {
@@ -7,6 +7,11 @@ body {
 
     main {
         padding-top: 94px !important;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        }
     }
 
     h1 {

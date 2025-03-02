@@ -36,6 +36,7 @@ useHead({
             :key="chain.name"
             class="mx-auto my-8"
             elevation="8"
+            variant="outlined"
             max-width="600"
         >
           <v-card-item>
