@@ -13,7 +13,7 @@ const menuItems = ref([
 <template>
   <div>
     <under-development/>
-    <v-app-bar app color="primary" class="fixed-menu" height="64">
+    <v-app-bar app color="primary" class="fixed-menu">
       <v-app-bar-nav-icon @click="drawer = !drawer" class="d-md-none"></v-app-bar-nav-icon>
 
       <v-toolbar-title class="toolbar-title">
