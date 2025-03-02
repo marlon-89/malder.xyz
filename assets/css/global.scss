@@ -5,6 +5,10 @@ body {
     font-family: 'Atkinson Hyperlegible Mono', serif;
     background-color: $background-color;
 
+    main {
+        padding-top: 94px !important;
+    }
+
     h1 {
         color: $primary-color;
         font-family: 'Atkinson Hyperlegible Mono', serif !important;

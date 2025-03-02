@@ -11,9 +11,9 @@ const menuItems = ref([
 </script>
 
 <template>
-  <under-development/>
-  <v-container fluid>
-    <v-app-bar color="primary" class="fixed-menu">
+  <div>
+    <under-development/>
+    <v-app-bar app color="primary" class="fixed-menu" height="64">
       <v-app-bar-nav-icon @click="drawer = !drawer" class="d-md-none"></v-app-bar-nav-icon>
 
       <v-toolbar-title class="toolbar-title">
@@ -26,7 +26,7 @@ const menuItems = ref([
             alt="logo"
             class="img-rounded"
         />&nbsp;
-        <strong>Malder</strong>
+        <strong>Malder validator</strong>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -45,7 +45,7 @@ const menuItems = ref([
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  </v-container>
+  </div>
 </template>
 
 <style lang="scss" scoped>
